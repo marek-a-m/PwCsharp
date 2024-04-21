@@ -12,3 +12,4 @@ C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\refint\wstep.d
 C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.pdb
 C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.genruntimeconfig.cache
 C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\ref\wstep.dll
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.sourcelink.json

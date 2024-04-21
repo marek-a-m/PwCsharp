@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("wstep")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5448e99ef2a353c1b07e36dbd62d34434909468d")]
 [assembly: System.Reflection.AssemblyProductAttribute("wstep")]
 [assembly: System.Reflection.AssemblyTitleAttribute("wstep")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
