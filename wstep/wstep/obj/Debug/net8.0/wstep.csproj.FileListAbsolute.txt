@@ -1,0 +1,14 @@
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\bin\Debug\net8.0\wstep.exe
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\bin\Debug\net8.0\wstep.deps.json
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\bin\Debug\net8.0\wstep.runtimeconfig.json
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\bin\Debug\net8.0\wstep.dll
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\bin\Debug\net8.0\wstep.pdb
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.AssemblyInfoInputs.cache
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.AssemblyInfo.cs
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.csproj.CoreCompileInputs.cache
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.dll
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\refint\wstep.dll
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.pdb
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\wstep.genruntimeconfig.cache
+C:\Users\misia\source\repos\PwCsharp\wstep\wstep\obj\Debug\net8.0\ref\wstep.dll
