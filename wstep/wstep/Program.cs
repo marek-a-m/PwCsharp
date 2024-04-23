@@ -11,7 +11,7 @@ class Program
         Koszyk koszyk = new Koszyk();
         koszyk.DodajProdukt(mleko);
         koszyk.DodajProdukt(jajka);
-        koszyk.DodajProdukt(ser);
+        koszyk.DodajProdukt(ser); 
         koszyk.DodajProdukt(majonez);
         koszyk.Zawartosc();
 
