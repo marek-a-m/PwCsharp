@@ -12,39 +12,39 @@ using System;
 
 class Sprzedaz
 {
-    public string Produkt { get; set; }
-    public int Ilosc { get; set; }
-    public decimal CenaJednostkowa { get; set; }
+    public string Product { get; set; }
+    public int Quantity { get; set; }
+    public decimal UnitPrize { get; set; }
 
-    public Sprzedaz(string produkt, int ilosc, decimal cenaJednostkowa)
+    public Sprzedaz(string product, int quantity, decimal unitprize)
     {
-        Produkt = produkt;
-        Ilosc = ilosc;
-        CenaJednostkowa = cenaJednostkowa;
+        Product = product;
+        Quantity = quantity;
+        UnitPrize = unitprize;
     }
 }
 
 class Zamowienie
 {
-    private DateTime dataRealizacji;
-    private string klient;
-    private Sprzedaz[] pozycjeZamowienia;
-    private int iloscPozycji;
+    private DateTime DeliveryDate;
+    private string Client;
+    private Sprzedaz[] OrderItems;
+    private int ItemNo;
 
-    public Zamowienie(DateTime dataRealizacji, string klient)
+    public Zamowienie(DateTime deliverydate, string client)
     {
-        this.dataRealizacji = dataRealizacji;
-        this.klient = klient;
-        pozycjeZamowienia = new Sprzedaz[20]; // Maksymalnie 20 pozycji w zamówieniu
-        iloscPozycji = 0;
+        this.DeliveryDate = deliverydate;
+        this.Client = client;
+        OrderItems = new Sprzedaz[20]; 
+        ItemNo = 0;
     }
 
     public void DodajPozycje(Sprzedaz pozycja)
     {
-        if (iloscPozycji < 20)
+        if (ItemNo < 20)
         {
-            pozycjeZamowienia[iloscPozycji] = pozycja;
-            iloscPozycji++;
+            OrderItems[ItemNo] = pozycja;
+            ItemNo++;
         }
         else
         {
@@ -59,12 +59,13 @@ class Zamowienie
 
     public void WypiszInformacje()
     {
-        Console.WriteLine($"Data realizacji: {dataRealizacji}");
-        Console.WriteLine($"Klient: {klient}");
+        Console.WriteLine("Szczególy zamówienia:");
+        Console.WriteLine($"Data realizacji: {DeliveryDate}");
+        Console.WriteLine($"Klient: {Client}");
         Console.WriteLine("Pozycje zamówienia:");
-        for (int i = 0; i < iloscPozycji; i++)
+        for (int i = 0; i < ItemNo; i++)
         {
-            Console.WriteLine($"{i + 1}. Produkt: {pozycjeZamowienia[i].Produkt}, Ilość: {pozycjeZamowienia[i].Ilosc}, Cena jednostkowa: {pozycjeZamowienia[i].CenaJednostkowa}");
+            Console.WriteLine($"{i + 1}. Produkt: {OrderItems[i].Product}, Ilość: {OrderItems[i].Quantity}, Cena jednostkowa: {OrderItems[i].UnitPrize}");
         }
     }
 }
@@ -73,14 +74,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Tworzenie zamówienia
-        Zamowienie zamowienie = new Zamowienie(DateTime.Now, "Firma XYZ");
-
-        // Dodawanie pozycji do zamówienia
-        zamowienie.DodajPozycje(new Sprzedaz("Laptop", 2, 2500));
-        zamowienie.DodajPozycje("Monitor", 3, 600);
-
-        // Wyświetlenie informacji o zamówieniu
+        Zamowienie zamowienie = new Zamowienie(DateTime.Now, "Klient");
+        zamowienie.DodajPozycje(new Sprzedaz("Koparka", 2, 250000));
+        zamowienie.DodajPozycje("Szpadel", 30, 200);
         zamowienie.WypiszInformacje();
     }
 }

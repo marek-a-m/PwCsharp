@@ -32,12 +32,26 @@ class Zespolone
         return new Zespolone(realPart, imagPart);
     }
 
-
     public override string ToString()
     {
         if (im >= 0)
             return $"{re} + {im}i";
         else
             return $"{re} - {-im}i";
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        Zespolone z1 = new Zespolone(5, 15);
+        Zespolone z2 = new Zespolone(10, -12);
+        Console.WriteLine($"z1 = {z1}");
+        Console.WriteLine($"z2 = {z2}");
+        Console.WriteLine($"Suma: {z1.Add(z2)}");
+        Console.WriteLine($"Różnica: {z1.Substract(z2)}");
+        Console.WriteLine($"Iloczyn: {z1.Multiply(z2)}");
     }
 }
